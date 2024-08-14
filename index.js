@@ -1,9 +1,14 @@
-let inputBtn = document.getElementById("input-btn");
-let inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+const inputEl = document.getElementById("input-el");
+const ulEl = document.getElementById("ul-el");
 
-let myLeads = [];
-
+let myLeads = ["rahul", "sultan", "ranjit"];
 
 inputBtn.addEventListener("click", ()=>{
-    console.log("The button has been clicked");
+    myLeads.push(inputEl.value);
+    console.log(myLeads);
 });
+
+        let listItems = myLeads.map(lead => `<li>${lead}</li>`).join('');
+        ulEl.innerHTML = listItems;
+

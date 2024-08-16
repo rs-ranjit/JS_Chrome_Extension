@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    /* min-width: 400px; */
+    min-width: 500px;
 }
 
 body{
@@ -27,7 +27,7 @@ input:focus{
 
 button{
     background-color: #5f9341;
-    /* min-width: 200px; */
+    min-width: 100px;
     color: white;
     font-weight: bold;
     padding: 10px 20px;  
